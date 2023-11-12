@@ -8,7 +8,7 @@ clickButton.addEventListener("click", function (){
     let userValue1 = userValue.value;
 
     let ounce = ((userValue1%453.6)/28.35).toFixed(1) ;
-    let lbs = (userValue1/453.6).toFixed(0) ;
+    let lbs = Math.floor((userValue1/453.6)) ;
     showAnswer.innerHTML =  'Weight - '+ lbs+' Lbs' +' : ' +ounce+' Oz';
     
 });
